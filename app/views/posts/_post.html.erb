@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag "post.css", :media => "all" %>
+
+<div class='post'>
+
+    <div id="<%= dom_id post %>">
+    <div id = 'post-inner'>
+        <div id = 'title'>
+            <strong>Title:</strong>
+            <%= post.title %>
+        </div>
+
+        <div id = 'body'>
+            <strong>Body:</strong>
+                <%= post.body %>
+            
+        </div>
+    </div>
+
+    </div>
+    
+    
+</div>

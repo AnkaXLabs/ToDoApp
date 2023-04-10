@@ -1,0 +1,43 @@
+<%= stylesheet_link_tag "form.css", :media => "all" %>  
+
+<div class = 'container'>
+
+    <%= form_with(model: post) do |form| %>
+        <% if post.errors.any? %>
+            <div style="color: red">
+            <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+            <ul>
+                <% post.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+                <% end %>
+            </ul>
+            </div>
+        <% end %>
+
+        
+
+        <%# <%= stylesheet_link_tag 'form.css' %>
+        <div id = 'form-container'>
+            <div class="form-group">
+                <%= form.label :title, style: "display: block" %>
+                <%= form.text_field :title %>
+            </div>
+
+            <div class="form-group">
+                <%= form.label :Note, style: "display: block" %>
+                <%= form.text_area :body %>
+            </div>
+
+            <div class="form-group" id = "user-id">
+                <%= form.label :user, style: "display: block" %>
+                <%= form.text_area :user_id, value: current_user.id %>
+            </div>
+
+            <div>
+                <%= form.submit "Accept", class:"btn btn-primary"%>
+            </div>
+        </div>
+        
+    <% end %>
+</div>

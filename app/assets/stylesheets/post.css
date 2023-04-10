@@ -1,0 +1,17 @@
+.post{
+    display: flex;
+    align-items: center;
+    background-color: blanchedalmond;
+    border: solid 0.2vh black;
+    border-radius: 1vh;
+    height: 100%;
+}
+
+#post-inner{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 1vh;
+}
+
+
