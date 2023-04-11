@@ -36,10 +36,22 @@
 #posts{
     background-color: antiquewhite;
     width: 80%;
+    border-radius: 2vh;
     height: max-content;
 }
 
 #post-render{
     width: 85%;
+}
+
+#profile {
+    align-self: flex-start;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#edit-profile{
+    margin-bottom: 1vh;
 }
 

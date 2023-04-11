@@ -4,6 +4,18 @@
 
 <div class = 'container'>
     <div id = 'header'>
+
+        <div id = 'profile'>
+            <div id = 'edit-profile'>
+                <%= link_to "Edit Profile"  ,  edit_user_registration_path %>
+            </div>
+            <div id = 'logout',>
+                <%= button_to "Log out" , destroy_user_session_path, method: :delete, data: { turbo: false } %>
+            </div>
+            
+            
+        </div>
+
         <h1>My Notes</h1>
 
         <div id = 'new-post'>

@@ -7,4 +7,7 @@
 //= link post.css
 //= link edit.css
 //= link show.css
+//= link login.css
+//= link passwordforgot.css
+//= link editprofile.css
 
